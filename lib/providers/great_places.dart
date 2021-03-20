@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart'; // for use changeNotifier
 import '../models/place.dart';
+import '../helpers/db_helper.dart';
 
 // ChangeNotifier è un mixin che permette di chiamare notifyListener
 class GreatPlaces with ChangeNotifier {
@@ -23,5 +24,10 @@ class GreatPlaces with ChangeNotifier {
     );
     _items.add(newPlace);
     notifyListeners();
+    DBHelper.insert('places', {
+      'id': newPlace.id,
+      'title': newPlace.title,
+      'image': newPlace.image.path,
+    });
   }
 }
