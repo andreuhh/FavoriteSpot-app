@@ -26,6 +26,10 @@
 	<string>We need to take a picture</string>
 	<key>NSCameraUsageDescription</key>
 	<string>We need to take a picture!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Need to get location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Need to get location</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This is for video!!</string>
 	<key>UILaunchStoryboardName</key>
